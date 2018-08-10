@@ -1,0 +1,37 @@
+uuid: 29e4811f-b0c7-4434-bc6d-e790850df567
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.content_browser
+  module:
+    - views
+name: content_browser
+label: 'Content browser'
+display: modal
+display_configuration:
+  width: '1245'
+  height: ''
+  link_text: 'Select content'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: node
+  display: rendered_entity
+  display_settings:
+    view_mode: content_browser
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  14183b97-a19f-440e-8b6a-36ee5fd6bb9b:
+    settings:
+      view: content_browser
+      view_display: entity_browser_1
+      submit_text: 'Select content'
+      auto_select: true
+    uuid: 14183b97-a19f-440e-8b6a-36ee5fd6bb9b
+    weight: 1
+    label: 'Content listing'
+    id: view

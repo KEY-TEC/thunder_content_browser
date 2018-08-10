@@ -1,0 +1,41 @@
+.entity-browser-document-browser-form .views-row .views-field-name {
+  display: block!important;
+}
+
+.entity-browser-document-browser-form .views-row .views-field-field-thumb img {
+  padding-bottom: 20px;
+}
+
+.entity-browser-browse-content-form.content-browser-form .views-row {
+  width: 194px;
+  float: left;
+  height: 230px;
+  margin-right: 10px;
+}
+
+.entity-browser-browse-content-form.content-browser-form .pager {
+  clear: both;
+}
+
+.view-content-entity-browser .view-content,
+.entity-browser-content-browser-form .entities-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-content-entity-browser .views-row,
+.entity-browser-content-browser-form .item-container {
+  display: flex!important;
+  flex-direction: column;
+}
+
+.view-content-entity-browser .views-field-title {
+  flex-grow: 1;
+  margin-top: -8px;
+  padding: 4px;
+  background-color: #07364a;
+  border: 2px solid #75caee;
+  border-top: 0;
+  color: #fff;
+  text-align: left;
+}

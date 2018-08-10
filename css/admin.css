@@ -1,0 +1,19 @@
+.admin-float-left {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.paragraph-form-item--has-preview {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.paragraph-form-item--has-preview .paragraph-form-item__actions .paragraph-type-title {
+  justify-content: flex-end!important;
+  text-align: right!important;
+}
+
+.js .paragraph-type-title {
+  flex-basis: 100%!important;
+}

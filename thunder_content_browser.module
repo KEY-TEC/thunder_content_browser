@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Prepares variables for views view templates.
+ * Attach css by thunder media and additional css for the content browser.
+ *
+ * Default template: views-view.html.twig.
+ *
+ * @param array $variables
+ *   Associative array.
+ */
+function thunder_content_browser_preprocess_views_view(array &$variables) {
+
+  $thunder_media_browser = [
+    'document_browser',
+    'content_browser',
+  ];
+
+  if (in_array($variables['view']->id(), $thunder_media_browser)) {
+    $variables['view_array']['#attached']['library'][] = 'thunder_media/entity_browser_view';
+    $variables['view_array']['#attached']['library'][] = 'thunder_content_browser/entity_browser_styling';
+  }
+}
+
+/**
+ * Attach the admin-styling css for better paragraph preview.
+ *
+ * Implements hook_page_attachments().
+ */
+function thunder_content_browser_page_attachments(array &$attachments) {
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  if ($theme == 'thunder_admin') {
+    $attachments['#attached']['library'][] = 'thunder_content_browser/admin_styling';
+  }
+}

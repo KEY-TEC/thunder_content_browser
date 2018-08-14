@@ -12,22 +12,35 @@
       "email": "info@nuvole.org"
     }
   ],
-  "require-dev": {
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "burdamagazinorg/thunder": "^8.2",
+    "cweagans/composer-patches": "^1.6",
     "nuvoleweb/drupal-component-scaffold": "*",
-    "drupal/console": "~1",
-    "drush/drush": "*",
-    "drupal/coder": "8.2.8",
+    "drupal/console": "^1.2",
+    "composer/installers": "^1.2",
+    "drush/drush": "~8.0|^9.0.0-beta8",
+    "oomphinc/composer-installers-extender": "^1.1",
+    "webflo/drupal-finder": "^1.0.0",
+    "webmozart/path-util": "^2.3"
+
+  },
+  "require-dev": {
+    "webflo/drupal-core-require-dev": "^8.4",
     "drupal/core": "~8"
   },
   "conflict": {
     "drupal/drupal": "*"
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "Drupal\\thunder_content_browser\\": "src"
@@ -40,8 +53,6 @@
         "build/profiles/contrib/{$name}": ["type:drupal-profile"],
         "build/themes/contrib/{$name}": ["type:drupal-theme"]
       }
-  },
-  "require": {
-    "drupal/thunder": "~2"
   }
+
 }

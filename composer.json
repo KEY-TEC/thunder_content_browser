@@ -1,0 +1,47 @@
+{
+  "name": "drupal/thunder_content_browser",
+  "type": "drupal-module",
+  "description": "Content browser support for thunder.",
+  "keywords": ["drupal", "web", "ui"],
+  "minimum-stability": "dev",
+  "license": "GPL-2.0+",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Nuvole Web",
+      "email": "info@nuvole.org"
+    }
+  ],
+  "require-dev": {
+    "nuvoleweb/drupal-component-scaffold": "*",
+    "drupal/console": "~1",
+    "drush/drush": "*",
+    "drupal/coder": "8.2.8",
+    "drupal/core": "~8"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Drupal\\thunder_content_browser\\": "src"
+    }
+  },
+  "extra": {
+      "installer-paths": {
+        "build/core": ["type:drupal-core"],
+        "build/modules/contrib/{$name}": ["type:drupal-module"],
+        "build/profiles/contrib/{$name}": ["type:drupal-profile"],
+        "build/themes/contrib/{$name}": ["type:drupal-theme"]
+      }
+  },
+  "require": {
+    "drupal/thunder": "^2.23"
+  }
+}

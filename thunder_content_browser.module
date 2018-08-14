@@ -13,7 +13,7 @@ function thunder_content_browser_preprocess_views_view(array &$variables) {
 
   $thunder_media_browser = [
     'document_browser',
-    'content_browser',
+    'node_browser',
   ];
 
   if (in_array($variables['view']->id(), $thunder_media_browser)) {

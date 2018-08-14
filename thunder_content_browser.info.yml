@@ -4,7 +4,5 @@ description: Provides better stylings for the content browser.
 core: 8.x
 package: ds
 dependencies:
-  - ds
-  - node
-  - paragraphs
   - thunder_media
+  - node

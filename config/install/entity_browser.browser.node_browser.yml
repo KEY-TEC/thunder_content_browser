@@ -3,10 +3,10 @@ langcode: de
 status: true
 dependencies:
   config:
-    - views.view.content_browser
+    - views.view.node_browser
   module:
     - views
-name: content_browser
+name: node_browser
 label: 'Content browser'
 display: modal
 display_configuration:
@@ -27,7 +27,7 @@ widget_selector_configuration: {  }
 widgets:
   14183b97-a19f-440e-8b6a-36ee5fd6bb9b:
     settings:
-      view: content_browser
+      view: node_browser
       view_display: entity_browser_1
       submit_text: 'Select content'
       auto_select: true

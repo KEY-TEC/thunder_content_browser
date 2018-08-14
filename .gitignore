@@ -1,1 +1,7 @@
 /.idea
+vendor
+behat.yml
+composer.lock
+docs/_build
+build/
+phpunit.xml

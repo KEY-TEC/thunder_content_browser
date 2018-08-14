@@ -1,22 +1,17 @@
-uuid: 4d0bb605-60be-4483-b198-14f9e8ddd5b5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_media
+    - field.storage.node.field_teaser_media
     - image.style.thumbnail
     - node.type.article
-    - node.type.location
-    - node.type.person
-    - node.type.reference_page
-    - node.type.teaser
   module:
     - entity_browser
     - media_entity
     - node
     - user
-id: content_browser
-label: 'Content browser'
+id: node_browser
+label: 'Content browser (Node)'
 module: views
 description: ''
 tag: ''
@@ -140,10 +135,10 @@ display:
           hide_alter_empty: true
           entity_type: node
           plugin_id: entity_browser_select
-        field_media:
-          id: field_media
-          table: node__field_media
-          field: field_media
+        field_teaser_media:
+          id: field_teaser_media
+          table: node__teaser_media
+          field: field_teaser_media
           relationship: none
           group_type: group
           admin_label: ''
@@ -537,7 +532,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_media'
+        - 'config:field.storage.node.field_teaser_media'
   entity_browser_1:
     display_plugin: entity_browser
     id: entity_browser_1
@@ -555,4 +550,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_media'
+        - 'config:field.storage.node.field_teaser_media'

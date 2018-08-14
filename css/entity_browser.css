@@ -1,11 +1,3 @@
-.entity-browser-document-browser-form .views-row .views-field-name {
-  display: block!important;
-}
-
-.entity-browser-document-browser-form .views-row .views-field-field-thumb img {
-  padding-bottom: 20px;
-}
-
 .entity-browser-browse-content-form.content-browser-form .views-row {
   width: 194px;
   float: left;

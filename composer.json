@@ -50,6 +50,12 @@
         "build/profiles/contrib/{$name}": ["type:drupal-profile"],
         "build/themes/contrib/{$name}": ["type:drupal-theme"]
       }
+  },
+  "enable-patching": true,
+  "patches": {
+    "drupal/entity_browser": {
+      "The View widget should filter based on field settings [#2865928]": "https://www.drupal.org/files/issues/entity-browser-view-context-2865928-14.patch"
+    }
   }
 
 }

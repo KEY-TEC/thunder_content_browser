@@ -42,6 +42,6 @@
       }
   },
   "require": {
-    "drupal/thunder": "^2.23"
+    "drupal/thunder": "~2"
   }
 }

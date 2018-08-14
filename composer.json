@@ -25,7 +25,6 @@
   "require": {
     "burdamagazinorg/thunder": "^8.2",
     "cweagans/composer-patches": "^1.6",
-    "nuvoleweb/drupal-component-scaffold": "*",
     "drupal/console": "^1.2",
     "composer/installers": "^1.2",
     "drush/drush": "~8.0|^9.0.0-beta8",
@@ -35,6 +34,7 @@
 
   },
   "require-dev": {
+    "nuvoleweb/drupal-component-scaffold": "*",
     "webflo/drupal-core-require-dev": "^8.4",
     "drupal/core": "~8"
   },

@@ -22,7 +22,7 @@
       "url": "https://asset-packagist.org"
     }
   ],
-  "require": {
+  "require-dev": {
     "burdamagazinorg/thunder": "^8.2",
     "cweagans/composer-patches": "^1.6",
     "drupal/console": "^1.2",
@@ -30,10 +30,7 @@
     "drush/drush": "~8.0|^9.0.0-beta8",
     "oomphinc/composer-installers-extender": "^1.1",
     "webflo/drupal-finder": "^1.0.0",
-    "webmozart/path-util": "^2.3"
-
-  },
-  "require-dev": {
+    "webmozart/path-util": "^2.3",
     "nuvoleweb/drupal-component-scaffold": "*",
     "webflo/drupal-core-require-dev": "^8.4",
     "drupal/core": "~8"

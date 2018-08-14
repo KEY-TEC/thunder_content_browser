@@ -1,9 +1,10 @@
+uuid: a408d71a-fa23-4ac5-96df-d93b2da1e258
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_teaser_media
-    - image.style.thumbnail
+    - image.style.media_thumbnail
     - node.type.article
   module:
     - entity_browser
@@ -135,9 +136,9 @@ display:
           hide_alter_empty: true
           entity_type: node
           plugin_id: entity_browser_select
-        field_teaser_media:
-          id: field_teaser_media
-          table: node__teaser_media
+        field_teaser_media_1:
+          id: field_teaser_media_1
+          table: node__field_teaser_media
           field: field_teaser_media
           relationship: none
           group_type: group
@@ -186,7 +187,7 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: thumbnail
+            image_style: media_thumbnail
             image_link: ''
           group_column: target_id
           group_columns: {  }

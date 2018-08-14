@@ -4,6 +4,10 @@
   padding-bottom: 20px;
 }
 
+.content-browser-item {
+  max-width: 200px;
+}
+
 .paragraph-form-item--has-preview {
   padding-top: 12px;
   padding-bottom: 12px;
